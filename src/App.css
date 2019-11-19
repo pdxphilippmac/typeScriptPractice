@@ -35,3 +35,12 @@ color:red;
     background-color: #282c34;
   
 }
+
+.card {
+
+
+  text-align:center;
+  background-color: lightgrey;
+  border-radius: 10px;
+  box-shadow: #282c34 2px 2px 2px 2px;
+}

@@ -47,3 +47,12 @@
   min-height:20px;
   min-width:40px;
 }
+.card {
+
+  margin:25px;
+
+  text-align:center;
+  background-color: lightgrey;
+  border-radius: 10px;
+  box-shadow: lightblue 5px 5px 5px ;
+}
