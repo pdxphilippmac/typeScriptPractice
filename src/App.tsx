@@ -6,7 +6,7 @@ import ParagraphDiv from './components/Div';
 import {ListItemDivProps} from "./interfaces/ListItemsDivProps";
 
 function handleChange(){
-  console.log("test")
+  console.log("clicked")
 }
 
 interface State {
