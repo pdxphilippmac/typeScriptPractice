@@ -5,6 +5,7 @@ import Form from './components/Form';
 import {Headline} from './components/H1';
 import ParagraphDiv from './components/Div';
 import {ListItemDivProps} from "./interfaces/ListItemsDivProps";
+import { Button } from './components/Button';
 
 function handleChange(){
   console.log("clicked")
@@ -35,6 +36,7 @@ class App extends Component<{}, State> {
           onChange={handleChange}
         />
         <ParagraphDiv title="Test Chapter" summary="bla"/>
+        <Button/>
       </div>
     );
   }
