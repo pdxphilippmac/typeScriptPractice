@@ -8,3 +8,17 @@
     background-color: var(--backgroundColor);
     color:var(--fontColor)
   }
+
+  .appBody {
+
+ 
+    text-align: center;
+    background-color: #282c34;
+  
+}
+
+.btn{
+
+  border-radius: 10px;
+  background:red;
+}

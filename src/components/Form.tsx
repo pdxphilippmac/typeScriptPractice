@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import { ListItemDivProps} from "../interfaces/ListItemsDivProps";
+import styles from "../App.module.css"
 
 interface FormProps {
   onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
@@ -20,7 +21,7 @@ export const Form: FC<FormProps> = ({
 }) => (
   <form onSubmit={onAdd}>
     <input onChange={onChange} value={task.name} placeholder="test" />
-    <button onClick={handleClick}type="submit">Log something</button>
+    <button className={styles.btn} onClick={handleClick}type="submit">Log something</button>
   </form>
 );
 

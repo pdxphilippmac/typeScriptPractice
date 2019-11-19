@@ -1,5 +1,5 @@
 import React, {FC} from "react"
-import styles from '../Div.module.css';
+import styles from '../App.module.css';
 interface ParagraphProps {
 
 

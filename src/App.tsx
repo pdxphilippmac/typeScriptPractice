@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import './App.css';
+import styles from './App.module.css';
+
 import Form from './components/Form';
 import {Headline} from './components/H1';
 import ParagraphDiv from './components/Div';
@@ -25,7 +26,7 @@ class App extends Component<{}, State> {
 
   render() {
     return (
-      <div>
+      <div className={styles.appBody}>
    <Headline title="TypeScript Test"/>
 
    
