@@ -1,19 +1,37 @@
 :root {
-    --backgroundColor: green;
-    --fontColor:red;
+    --backgroundColor: #282c34;
+    --contrastFontColor:lightgrey;
+    --btnAlertColor: lightblue;
+    --fontColor: black
+  }
+  body {
+    height:100% ;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--backgroundColor)
   }
 
 
 .divElement {
     background-color: var(--backgroundColor);
-    color:var(--fontColor)
+    color:var(--contrastFontColor);
+    margin:20px;
   }
 
   .appBody {
-
- 
+    margin:20px;
+    height: 100vh;
     text-align: center;
     background-color: #282c34;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  
+
   
 }
 
@@ -21,4 +39,11 @@
 
   border-radius: 10px;
   background:red;
+}
+.btnAlert{
+
+  border-radius: 2px;
+  background:var(--btnAlertColor);
+  min-height:20px;
+  min-width:40px;
 }

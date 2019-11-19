@@ -10,7 +10,7 @@ interface ParagraphProps {
     children?: React.ReactNode
 }
 
-export const ParagraphDiv: FC<ParagraphProps> = ({title,summary,children})=> (<div className={styles.divElement}>{title}{summary} </div>)
+export const ParagraphDiv: FC<ParagraphProps> = ({title,summary,children})=> (<div className={styles.divElement}>{title}{summary} {children}</div>)
 
 
 export default ParagraphDiv
