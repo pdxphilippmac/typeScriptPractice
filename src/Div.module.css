@@ -1,0 +1,10 @@
+:root {
+    --backgroundColor: green;
+    --fontColor:red;
+  }
+
+
+.divElement {
+    background-color: var(--backgroundColor);
+    color:var(--fontColor)
+  }

@@ -1,26 +1,42 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
 import './App.css';
+import Form from './components/Form';
+import {Headline} from './components/H1';
+import ParagraphDiv from './components/Div';
+import {ListItemDivProps} from "./interfaces/ListItemsDivProps";
 
-const App: React.FC = () => {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function handleChange(){
+  console.log("test")
+}
+
+interface State {
+  newTask: ListItemDivProps;
+  tasks: ListItemDivProps[];
+}
+
+class App extends Component<{}, State> {
+  state = {
+    newTask: {
+      id: 1,
+      name: ""
+    },
+    tasks: []
+  };
+
+  render() {
+    return (
+      <div>
+   <Headline title="TypeScript Test"/>
+
+   
+        <Form
+          task={this.state.newTask}
+          onChange={handleChange}
+        />
+        <ParagraphDiv title="Test Chapter" summary="bla"/>
+      </div>
+    );
+  }
 }
 
 export default App;
