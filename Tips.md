@@ -96,3 +96,9 @@ bei der method auf body -> raw -> rechts auf json umstellen -> und dann kann man
     "email": "rheinische@versicherung.de",
     "created": "2019-06-02T11:12:03.606Z",
     "updated": "2019-06-02T11:12:03.606Z"}
+
+
+
+# GitHub 
+
+git reset --soft HEAD~2   --> zwei commits zurückspirngen
