@@ -22,7 +22,8 @@ psql -U svausweis -d svausweis --> svausweis ist einmal der benutzer und das zwe
 typeORmcomfig beinhaltet password und nutzer etc
 psql-U svausweis -> pw aus typeORm config rauskopieren und datenbank starten.
 
-
+Tutorial:
+ https://medium.com/coding-blocks/creating-user-database-and-adding-access-on-postgresql-8bfcd2f4a91e
 
 # Gitlab
 
