@@ -35,9 +35,58 @@ git checkout -b richard-kraft/general-request-server#2-addControllerMethods
 ```
 
 
+[WIP]:
+feat:
+- fix: 
+- feat: add new methods, functions like get requests and so on
+- docs: updated documentation for like new dependency versions etc.
+- chores: clean up etc
+- prefixes for commits for better commit-history
+- squash commits: add all commits to one, to have a better overview in commit history 
+
+-----------
+
+## Temlate for commit-rules
+
+
+**Please check these requirements**
+
+* The commit message follows [our guidelines](https://www.conventionalcommits.org/)
+* Tests/Stories for the changes have been added (for bug fixes / features)
+* Docs have been added / updated (for bug fixes / features)
+
+---
+
+## What is the current behavior? (You can also link to an open Jira issue here)
+
+no controller to get data for health insurances
+
+
+## What is the new behavior (if this is a feature change)?
+
+get all insurances, get insurance by id, create insurance, update insurance and delete insurance by ID,
+
+
+## How did you test your changes?
+
+Postman collection updated and successfully tested, post/delete database-entries in "svausweis" watched with pgAdmin without any problems
+
+## What changes might devs need to make due to this PR? (like updating settings or deps with `npm ci`?)
+
+-
+
+### Other information:
+
+- no `@Authorized()`used to achieve task AND no `@Unique([])` so you can post the same insurance multiple times
+
+
+
+
+--------------------
+--------------------
 # Postman
 
-unter collection ein post/get requestetc erstellen
+unter collection ein post/get request etc erstellen
 
 
 bei der method auf body -> raw -> rechts auf json umstellen -> und dann kann man den body übergeben, bsp. {   "id": 2,
