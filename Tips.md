@@ -21,6 +21,7 @@ psql -U postgres --> unter dem user postgres anmelden
 psql -U svausweis -d svausweis --> svausweis ist einmal der benutzer und das zweite mal der name der database, mit diesem command target man also die database, falls man plugins installieren möchte,
 typeORmcomfig beinhaltet password und nutzer etc
 psql-U svausweis -> pw aus typeORm config rauskopieren und datenbank starten.
+Standard postgres port 5432
 
 Tutorial:
  https://medium.com/coding-blocks/creating-user-database-and-adding-access-on-postgresql-8bfcd2f4a91e
@@ -103,3 +104,56 @@ bei der method auf body -> raw -> rechts auf json umstellen -> und dann kann man
 # GitHub 
 
 git reset --soft HEAD~2   --> zwei commits zurückspirngen
+
+# NPM I vs NPM CI
+
+
+
+In short, the main differences between using npm install and npm ci are:
+
+The project must have an existing package-lock.json or npm-shrinkwrap.json.
+If dependencies in the package lock do not match those in package.json, npm ci will exit with an error, instead of updating the package lock.
+npm ci can only install entire projects at a time: individual dependencies cannot be added with this command.
+If a node_modules is already present, it will be automatically removed before npm ci begins its install.
+It will never write to package.json or any of the package-locks: installs are essentially frozen.
+
+# SVAUSWEIS PROJECT
+
+
+front-end:
+(npm ci) 
+npm run dev
+
+back-end
+(npm ci)
+npm run start
+
+
+
+menu entry for redirecting to new page, --> commit
+
+DISPLAY DIVIDER ONLY ON KRANKENKASSE AFTER MAPPING:
+
+  ```js
+
+  {
+    title: 'Krankenkassen',
+    Icon: HospitalIcon,
+    href: '/admin/healthInsurance',
+    requiresRole: 'ADMIN',
+    withDivider: true,
+  },
+
+
+     <Link href={route.href} key={index} >
+                <>
+                  <MenuItem>
+                    <ListItemIcon>
+                      <route.Icon />
+                    </ListItemIcon>
+                    <Typography variant="inherit">{route.title}</Typography>
+                  </MenuItem>
+                  {route.withDivider && <Divider className={classes.divider} />}
+                </>
+              </Link>
+```
