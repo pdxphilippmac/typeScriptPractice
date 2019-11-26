@@ -130,9 +130,8 @@ npm run start
 
 
 
-menu entry for redirecting to new page, --> commit
 
-DISPLAY DIVIDER ONLY ON KRANKENKASSE AFTER MAPPING:
+### DISPLAY DIVIDER ONLY ON KRANKENKASSE AFTER MAPPING:
 
   ```js
 
@@ -157,3 +156,6 @@ DISPLAY DIVIDER ONLY ON KRANKENKASSE AFTER MAPPING:
                 </>
               </Link>
 ```
+
+
+- use reducer() instead of mapping
