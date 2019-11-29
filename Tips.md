@@ -159,3 +159,8 @@ npm run start
 
 
 - use reducer() instead of mapping
+
+
+# All important technologies
+
+TypeScript, typeORM, pgAdmin, postgres, postgreSQL, Next.js, routing-controllers, React Native, restAPI, MAterialUI, node.js, express.js, Webpack, Docker, 
